@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.17.0",
     "babel": "^6.23.0",
     "body-parser": "^1.16.1",
     "chalk": "^1.1.3",
