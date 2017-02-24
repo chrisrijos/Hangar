@@ -3,7 +3,7 @@
    var User = require('../../user.dynamo/index.js');
   
    function createUser(req, res, next) {
-     User.save(req.body, (user) => {
+     User.create(req.body, (user) => {
         return res.status(201).json(user);
      });
    }

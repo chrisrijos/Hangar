@@ -12,13 +12,28 @@
     name: {
       type: String,
       rangeKey: true,
-      index: true
+      index: true,
+      required: true
     },
     email: {
       type: String,
       rangeKey: true,
-      index: true
+      index: true,
+      required: true
     },
+    address: {
+      type: Object,  
+      address_line: {
+        type: String
+      },
+      state: {
+        type: String
+      },
+      zip_code: {
+        type: Number
+      }
+    }
+    ,
     created: {
       type: Date
     },
