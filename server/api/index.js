@@ -1,14 +1,8 @@
   'use strict';
 
-   const router = require('express').Router();
-   const controller = require('./Aircraft/aircraft.controller/index');
+  const router = require('express').Router();
 
-   /*router.get('/', controller.getAircraft);
-   router.post('/', controller.createAircraft);
+  //API Endpoints
+  router.use('/aircraft', require('./Aircraft/'));
 
-   router.route('/:aircraftId')
-     .get(controller.getAircraftById)
-     .put(controller.updateUser)
-     .delete(controller.deleteUser);*/
- 
-   module.exports = router;
+  module.exports = router;
