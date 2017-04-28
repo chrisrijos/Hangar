@@ -1,6 +1,9 @@
   'use strict';
-  
-   var dynamoose = require('dynamoose'); 
-   var Aircraft = require('./Aircraft.model')(dynamoose);
+
+   const dynamoose = require('dynamoose'); 
+   const AircraftSchema = require('./Aircraft.schema');
+
+   //defines aircraft schema
+   const Aircraft = dynamoose.model('Aircraft', AircraftSchema); 
 
    module.exports = Aircraft;
