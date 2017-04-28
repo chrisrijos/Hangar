@@ -1,7 +1,0 @@
-  User 
---**Properties**
-      userID: Number
-      name: String
-      email: String
-      created: Date
-

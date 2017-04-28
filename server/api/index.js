@@ -1,12 +1,13 @@
   'use strict';
 
    const router = require('express').Router();
-   const controller = require('./User/user.controller/index');
+   const controller = require('./Aircraft/aircraft.controller/index');
 
-   //router.get('/', controller.getUser);
-   router.post('/', controller.createUser);
-   /*router.route('/:userID')
-     .get(controller.getUser)
+   /*router.get('/', controller.getAircraft);
+   router.post('/', controller.createAircraft);
+
+   router.route('/:aircraftId')
+     .get(controller.getAircraftById)
      .put(controller.updateUser)
      .delete(controller.deleteUser);*/
  

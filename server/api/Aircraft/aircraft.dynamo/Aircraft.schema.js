@@ -4,21 +4,38 @@
   var dynamoose = require('dynamoose');
   var chalk = require('chalk');
   
-  var UserSchema = dynamoose.Schema({
-    userID: {
+  var AircraftSchema = dynamoose.Schema({
+    aircraftId: {
       type: Number,
       hashKey: true
     },
-    name: {
+    model: {
       type: String,
       rangeKey: true,
       index: true,
       required: true
     },
-    email: {
+    ownerId: {
       type: String,
       rangeKey: true,
       index: true,
+      required: true
+    },
+    year: {
+      type: String  
+    },
+    price: {
+      type: Number,
+      required: true
+    },
+    images: {
+      type: [String] 
+    },
+    engine: {
+      type: String
+    },
+    type: {
+      type: String,
       required: true
     },
     address: {
@@ -32,8 +49,7 @@
       zip_code: {
         type: Number
       }
-    }
-    ,
+    },
     created: {
       type: Date
     },
@@ -44,4 +60,4 @@
     }
   });
  
-  module.export = UserSchema;
+  module.export = AircraftSchema;
