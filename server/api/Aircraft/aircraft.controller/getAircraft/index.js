@@ -1,6 +1,6 @@
   'use strict';
 
-  var Aircraft = require('../../aircraft.dynamo/index.js');
+  var Aircraft = require('../../aircraft.dynamo/Aircraft.schema');
 
   function getAircraft(req, res, next) {
     Aircraft.get(req.params.aircraftId, (aircraft) => {

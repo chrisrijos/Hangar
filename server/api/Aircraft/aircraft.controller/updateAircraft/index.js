@@ -1,6 +1,6 @@
   'use strict';
   
-   var Aircraft = require('../../aircraft.dynamo/index.js');
+   var Aircraft = require('../../aircraft.dynamo/Aircraft.schema');
    const chalk = require('chalk');
 
    function updateAircraft(req, res, next) {

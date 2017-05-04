@@ -1,6 +1,6 @@
  'use strict';
 
-  const Aircraft = require('../../aircraft.dynamo/index.js'); 
+  const Aircraft = require('../../aircraft.dynamo/Aircraft.schema'); 
   const chalk = require('chalk');
 
   function deleteAircraft(req, res, next) {

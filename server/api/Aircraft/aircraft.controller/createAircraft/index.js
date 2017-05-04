@@ -1,6 +1,6 @@
   'use strict';
 
-  const Aircraft = require('../../aircraft.dynamo/index');
+  const Aircraft = require('../../aircraft.dynamo/Aircraft.schema');
 
   function createAircraft(req, res, next) {
     Aircraft.create(req.body, (aircraft) => {
